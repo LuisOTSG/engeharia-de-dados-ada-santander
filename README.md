@@ -71,4 +71,15 @@ Esta é uma trilha de formação do processo seletivo Santander Coders 2023, da 
 
 ## Banco de Dados
 
+1. Introdução ao curso
+2. Tipos de dados e custo de armazenamento
+3. Modelagem de entidades
+4. Modelagem de relacionamentos
+5. Normalização de dados
+6. Inserindo tabelas no banco
+7. Inserindo dados no banco
+8. Editando e removendo dados
+9. Permissionamento e Views
+10. Índices
+11. 
 ## Introdução ao Cloud Computing
