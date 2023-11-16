@@ -81,5 +81,15 @@ Esta é uma trilha de formação do processo seletivo Santander Coders 2023, da 
 8. Editando e removendo dados
 9. Permissionamento e Views
 10. Índices
-11. 
+
 ## Introdução ao Cloud Computing
+
+1. Apresentação e histórico
+2. Cloud pública x privada e principais provedores
+3. Modelos IaaS, PaaS, SaaS e Serverless
+4. Principais serviços - Parte 1
+5. Principais serviços - Parte 2
+6. Arquitetura para CloudIntrodução à infraestrutura como código
+7. Introdução ao deployment em Cloud e esteiras de CI/CD
+8. Introdução à segurança em Cloud
+9. Revisão geral e conclusão
