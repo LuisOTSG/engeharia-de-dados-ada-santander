@@ -1,0 +1,43 @@
+INICIO principal
+	VAR opcao_selecionada: STRING
+	VAR valor: INTEIRO
+	VAR saldo: INTEIRO
+	VAR encerrar_programa: BOOLEANO
+
+	DEFINIR encerrar_programa -> Falso
+
+	EQUANTO encerrar_programa IGUAL_A False
+		CHAMAR MOSTRAR_MENU -> opcao_selecionada
+		SE opcao_selecionada IGUAL_A a
+			MOSTRAR 'Seu saldo é: ', saldo
+		OU_SE opcao_selecionada IGUAL_A b
+			MOSTRAR 'Digite o valor a depositar: '
+			ESPERAR_DIGITACAO -> valor
+			SOMAR valor, saldo -> saldo
+			MOSTRAR 'Deposito efetuado'
+		OU_SE opcao_selecionada IGUAL_A c
+			MOSTRAR 'Digite o valor a retirar: '
+			ESPERAR_DIGITACAO -> valor
+			SE valor MAIOR_QUE saldo
+				MOSTRAR 'Saque não permitido, saldo insuficiente'
+			SENAO
+				SUBTRAIR valor, saldo -> saldo
+			FIM_SE
+			MOSTRAR 'Saque efetuado'
+		OU_SE opcao_selecionada IGUAL_A d
+			DEFINIR Verdadeiro -> encerarr_programa
+		SENAO
+			MOSTRAR 'Opção inválida, tente novamente'
+		FIM_SE
+	FIM_ENQUANTO
+
+INICIO MOSTRAR_MENU
+	VAR opcao_selecionada: STRING
+	MOSTRAR 'Menu de operações'
+	MOSTRAR '[a] Mostrar Saldo'
+	MOSTRAR '[b] Realizar Depósito'
+	MOSTRAR '[c] Realizar Saque'
+	MOSTRAR '[d] Encerarar Programa'
+	ESPERAR_DIGITACAO -> opcao_selecionada
+	RETORNAR opca_selecionada
+FIM MOSTRAR_MENU
